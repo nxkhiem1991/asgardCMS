@@ -10,7 +10,7 @@
 
 @section('content')
     <div class="row">
-        <h1>{{ $page->title }}</h1>
-        {!! $page->body !!}
+      <h1>{{ $page->title }}</h1>
+      {!! $page->body !!}
     </div>
 @stop
