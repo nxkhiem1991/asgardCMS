@@ -10,9 +10,6 @@
 
     <div class="navbar-custom-menu">
         <ul class="nav navbar-nav">
-            <?php if (is_module_enabled('Notification')): ?>
-            @include('notification::partials.notifications')
-            <?php endif; ?>
             <li>
                 <a href="" class="publicUrl" style="display: none">
                     <i class="fa fa-eye"></i> {{ trans('page::pages.view-page') }}
@@ -79,6 +76,9 @@
                     </li>
                 </ul>
             </li>
+            <?php if (is_module_enabled('Notification')): ?>
+            @include('notification::partials.notifications')
+            <?php endif; ?>
         </ul>
     </div>
 </nav>
